@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; 
+    background-color: black;
+}
+
+#dtfield {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    position: absolute;
+    left: 81%;
+    top: 0;
+    
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/pic1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* filter: blur(5px); */
+    
+}
+
+.centertext h1 {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 140px;
+    color: white;
+    font-weight: bolder;
+    animation: textanimation 3s ease-in-out;
+    font-variant: small-caps;
+    font-family: Architects Daughter;
+}
+@keyframes textanimation{
+    0%{
+        letter-spacing: 20px;
+    }
+    110%{
+        letter-spacing: 1px;
+    }
+}
+
+a, ul, li
+{
+	font-family: Arial, Helvetica;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	display:inline;
+	float: left;
+    padding-right: 120px;
+    padding-bottom: 5px;
+    margin: 5px 0 0 40px;
+}
+    nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-style: solid;
+    width: 100%;
+    background-color: #000000;
+    opacity: 90%;
+}
+
+a:active
+{
+	color: #00c8fa;
+}
+
+.menu {
+    color: black;
+    font-size: 100px;
+   
+}
+
+h1{ 
+    text-align: center;
+    font-family: Marck Script;
+    
+}
+
+.all {
+    position: absolute;
+    margin-top: 90%;
+    margin-bottom: 5%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    padding: 5rem 0;
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0 5px 70px 45px black;
+    border-radius: 1px;
+    text-align: center;
+    font-family: Ubuntu;
+}
+
+.pizza1{
+    
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+    margin: 10px 0 0;
+}
+
+figcaption {
+    font-family: Lemonada;
+}
+
+.checkbox {
+    margin: 30px 0 17px 0;
+}
+
+
+.SW1, .dk {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+  
+}
+
+#Topping, #Topping2, #Topping3 {
+    margin: 15px;
+}
+
+.garden-beef, .mixed-pork {
+    margin: 50px 0 50px 0;
+}
+
+#quantity {
+    margin-top: 20px;
+}
+
+
+.allDrink {
+    margin: 50px 0 50px 0;
+}
+.drinks{
+    margin: 20px 0 10px 0;
+}
+
+form {
+    margin: 100px 0 30px 0;
+}
+.btn {
+    font-size: 15px;
+    font-family: Indie Flower;
+    font-weight: 900;
+    padding: 15px 15px;
+}
+
+figure, img {
+    transition: transform 2s;
+}
+
+figure:hover, img:hover {
+    -ms-transform: scale(1.25); 
+    -webkit-transform: scale(1.25); 
+    transform: scale(1.25); 
+}

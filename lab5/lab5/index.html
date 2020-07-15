@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lab5.css">
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+    <div class="box"> 
+    </div>
+    <div class="centertext">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#Pizza">Pizza</a>
+                    <a href="#Sandwich">Sandwich</a>
+                    <a href="#Drinks">Drinks</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>Welcome</h1>
+    </div>
+    <span id="dtfield" ></span>
+
+    <div class="all">
+        <h1 class="menu">Menu</h1>
+        <br>
+        <form name= "f1" method="POST" action=""></form>
+            <a name="Pizza"></a>
+            <h1>Pizza</h1>
+            <div class="pizzas">
+                <figure>
+                    <img class="pizza1" src="img/cheese.jpg" alt=" pizza">
+                    <figcaption>Super Cheesy</figcaption>
+                </figure>
+
+
+                <figure>
+                    <img class="pizza1" src="img/meat.jpg" alt=" pizza">
+                    <figcaption>Extra Meaty</figcaption>
+                </figure> 
+            
+                
+                <figure>
+                    <img class="pizza1" src="img/veggy.jpg" alt=" pizza">
+                    <figcaption>Really Veggy</figcaption>
+                </figure> 
+
+                <div class="checkbox">
+                    <input type="radio" name="r1" value="Super Cheesy" checked>Super Cheesy
+                    <input type="radio" name="r1" value="Extra Meaty">Extra Meaty
+                    <input type="radio" name="r1" value="Really Veggy">Really Veggy
+                </div>
+                
+                <div class="p1Radio">
+                    <input type="radio" name="r2" value="8.50" checked>Small $8.50
+                    <input type="radio" name="r2" value="11.50">Medium $11.50
+                    <input type="radio" name="r2" value="14.00">Large $14.00
+                    <input type="radio" name="r2" value="16.50">Extra Large $16.50
+                </div> 
+                <div class="P1Top">
+                    <label for="Topping">Topping:</label>
+                    <select name="Topping" id="Topping3">
+                        <option></option>
+                    <option value="Extra Cheese">Extra Cheese $1.75</option>
+                    <option value="Pepperoni">Pepperoni $1.75</option>
+                    <option value="Mushrooms">Mushrooms $1.75</option>
+                    <option value="Bacon">Bacon $1.75</option>
+                    <option value="Olives">Olives $1.75</option>
+                    </select>
+                    <div class="topItems">
+                        <input type="checkbox" id="top1" name="top1" value="extra cheese">
+                        <label for="top1">Extra Cheese $1.75</label><br>
+                    </div>
+                    <div class="topItems">
+                        <input type="checkbox" id="top2" name="top2" value="pepperoni">
+                        <label for="top1">Extra Cheese $1.75</label><br>
+                    </div>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" placeholder="0" class="quantity" name="quantity" min="0">
+                </div>
+            </div>
+
+            <a name="Sandwich"></a>
+            <div class="Sandwich">
+                <h1>Sandwich</h1>
+                <div class="garden-beef">
+                    <img class="SW1" src="img/garden.jpg" alt="Sandwhich"><br>
+                    <input class="SWRadio" type="radio" name="r5" value="7.50">All Garden Vegetarian $7.50
+                    <br>
+                    <img class="SW1" src="img/beef.jpg" alt="Sandwhich"><br>
+                    <input class="SWRadio" type="radio" name="r5" value="8.50">Big Beef on a Bun $8.50
+                </div> 
+                
+
+                <div class="mixed-pork">
+                    
+                    <img class="SW1" src="img/mixed.jpg" alt="Sandwhich"><br>
+                    <input class="SWRadio" type="radio" name="r5" value="9.50">Mixed Grill $9.50 
+                    <br>
+                    <img class="SW1" src="img/pork.jpg" alt="Sandwhich"><br>
+                    <input class="SWRadio" type="radio" name="r5" value="9.50">Grilled Pork $9.50
+                </div>
+                <div>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" placeholder="0" id="quantity" name="quantity" min="0">
+                </div> 
+            </div>
+                
+            <a name="Drinks"></a>
+            <div class="allDrink">
+                <img class="dk" src="img/drink.png" alt="Sandwhich"><br>
+                <div class="drinks">
+                <label for="drink">Drinks:</label>
+                <select name="drink" id="drink">
+                    <option></option>
+                    <option value="Extra Cheese">Cola</option>
+                    <option value="Pepperoni">Orange</option>
+                    <option value="Mushrooms">Lemon</option>
+                    <option value="Bacon">Root Beer</option>
+                </select>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" placeholder="0" class="quantity" name="quantity" min="0">
+                </div>
+                <div class="drinkRadio">
+                    <input type="radio" name="r6" value="1.25">Small $1.25
+                    <input type="radio" name="r6" value="1.75">Medium $1.75
+                    <input type="radio" name="r6" value="2.00">Large $2.00
+                </div> 
+            </div>
+                
+                        
+            
+            <h1>Order Info</h1>
+            
+            <input type="text" name="Fname" maxlength="25" placeholder="First Name" size="30px" required pattern="[A-Za-z-\s]{1,25}" title="{Only alphabetical characters}">
+            <br><br>
+            <input type="text" name="Lname" maxlength="25" placeholder="Last Name" size="30px" required pattern="[A-Za-z-\s]{1,25}" title="{Only alphabetical characters}">
+            <br><br>
+            <textarea class="add" cols="30" placeholder="Address" required></textarea>
+            <br><br>
+            <input class="phoneEmail" type="tel" name="phone" placeholder="Phone Numbe: 1XXX-XXX-XXXX" size="30px" required pattern="[0-9-]{13}" maxlength="13" title="{13 Digits only}">
+            <input type="button" value="order" onclick="buttonandchecks();">
+        </form>   
+        <h2>Order info: </h2>
+        <h2><span id="result"></span></h2>          
+    </div>
+</body>
+</html>
