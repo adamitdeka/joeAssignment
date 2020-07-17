@@ -1,52 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="lab5.css">
-</head>
-<body>
-    <div class="box"> 
-    </div>
-    <div class="centertext">
-        <nav>
-            <ul>
-                <li>
-                    <a href="#Pizza">Pizza</a>
-                    <a href="#Sandwich">Sandwich</a>
-                    <a href="#Drinks">Drinks</a>
-                </li>
-            </ul>
-        </nav>
-        <h1>Welcome</h1>
-    </div>
-    <span id="dtfield" ></span>
-
-    <div class="all">
-        <h1 class="menu">Menu</h1>
-        <br>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
         <form name= "orderForm" id="orderForm" method="POST">
-            
             <h1>Pizza</h1>
             <div class="pizzas">
-                <figure>
-                    <img class="pizza1" src="img/cheese.jpg" alt=" pizza">
-                    <figcaption>Super Cheesy</figcaption>
-                </figure>
-
-
-                <figure>
-                    <img class="pizza1" src="img/meat.jpg" alt=" pizza">
-                    <figcaption>Extra Meaty</figcaption>
-                </figure> 
-            
-                
-                <figure>
-                    <img class="pizza1" src="img/veggy.jpg" alt=" pizza">
-                    <figcaption>Really Veggy</figcaption>
-                </figure> 
-
                 <div class="checkbox">
                     <input type="radio" name="pizza type" value="Super Cheesy">Super Cheesy
                     <input type="radio" name="pizza type" value="Extra Meaty">Extra Meaty
@@ -88,20 +49,11 @@
             <div class="Sandwich">
                 <h1>Sandwich</h1>
                 <div class="garden-beef">
-                    <img class="SW1" src="img/garden.jpg" alt="Sandwhich"><br>
                     <input class="SWRadio" type="radio" name="sandwich type" value="All Garden Vegetarian $7.50">All Garden Vegetarian $7.50
-                    <br>
-                    <img class="SW1" src="img/beef.jpg" alt="Sandwhich"><br>
                     <input class="SWRadio" type="radio" name="sandwich type" value="Big Beef on a Bun $8.50">Big Beef on a Bun $8.50
                 </div> 
-                
-
-                <div class="mixed-pork">
-                    
-                    <img class="SW1" src="img/mixed.jpg" alt="Sandwhich"><br>
+                <div class="mixed-pork"> 
                     <input class="SWRadio" type="radio" name="sandwich type" value="Mixed Grill $9.50">Mixed Grill $9.50 
-                    <br>
-                    <img class="SW1" src="img/pork.jpg" alt="Sandwhich"><br>
                     <input class="SWRadio" type="radio" name="sandwich type" value="Grilled Pork $9.50">Grilled Pork $9.50
                 </div>
                 <div>
@@ -112,16 +64,15 @@
                 
             
             <div class="allDrink">
-                <img class="dk" src="img/drink.png" alt="Sandwhich"><br>
                 <div class="drinks">
-                    <label for="drink">Drinks:</label>
-                    <select name="drink" id="drink">
-                        <option>__Select One__</option>
-                        <option value="Cola">Cola</option>
-                        <option value="Orange">Orange</option>
-                        <option value="Lemon">Lemon</option>
-                        <option value="Root Beer">Root Beer</option>
-                    </select>
+                <label for="drink">Drinks:</label>
+                <select name="drink" id="drink">
+                    <option>__Select One__</option>
+                    <option value="Cola">Cola</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Lemon">Lemon</option>
+                    <option value="Root Beer">Root Beer</option>
+                </select>
                     <label for="quantity">Quantity:</label>
                     <input type="number" placeholder="0" class="quantity" id="drinkQty" name="quantity" min="0">
                 </div>
@@ -142,9 +93,12 @@
             <input class="phoneEmail" id="phone" type="tel" name="phone" placeholder="Phone Numbe: 1XXX-XXX-XXXX" size="30" required pattern="[0-9-]{13}" maxlength="13" title="{13 Digits only}">
             <input type="submit" value="Order">
         </form>   
+  
         <div id="orderInfo">
-            <div id="customerInfo">
-                
+            <div id="addrContainer">
+                <div>Davis Mills</div>
+                <div>123 Wonder Street</div>
+                <div>403-111-4444</div>
             </div>
             <div id="orderContainer">
                 <div>Your order:</div>
@@ -157,11 +111,13 @@
                 <div id="drinkContainer">
                     <h2>Drink:</h2>
                 </div>
-                <div id="orderTotal">
-                    <h2>Total:</h2>
+                <div>
+                    <span>Order Total:</span>
+                    <span id="orderTotal"></span>
                 </div>
             </div>
         </div> 
+        
         <script src="app.js"></script> 
     </body>
 </html>
